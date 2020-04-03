@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1.title {
+  color: #ffd90f;
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  text-align: center;
+  margin-top: 1%;
+  transition: all 1s;
+}
+
+h1.title:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+}
+
+button {
+  font-family: "Permanent Marker", cursive;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 1%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: #ffd90f;
+}
+
+button:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+h1 {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+h2 {
+  font-family: "Gochi Hand", cursive;
+}
+
+.container {
+  width: 80%;
+  margin: 2.5% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+#output {
+  margin-top: 2.5%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.overlay:hover {
+  cursor: pointer;
+  color: white;
+  background: lightskyblue;
+}
+
+.picture {
+  margin-top: 2.5%;
+}
+
+img {
+  transition: all 1s;
+  height: 400px;
+}
+
+img:hover {
+  transform: scale(1.1) rotate(10deg) translateX(-10%) translateY(10%);
+}

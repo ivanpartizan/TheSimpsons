@@ -1,5 +1,54 @@
 const quotes = [
   {
+    quote:
+      "I’d rather let a thousand guilty men go free than chase after them.",
+    author: "Chief Wiggum",
+  },
+  {
+    quote: "Go out on a Tuesday? Who am I, Charlie Sheen?",
+    author: "Marge Simpson",
+  },
+  {
+    quote:
+      "Wait a minute. Bart’s teacher is named ‘Krabappel’? Oh, I’ve been calling her ‘Crandall.’ Why didn’t anyone tell me? Ohhh, I’ve been making an idiot out of myself!",
+    author: "Homer Simpson",
+  },
+  {
+    quote:
+      "Boy, I tell ya, they only come out at night. Or in this case, the daytime.",
+    author: "Chief Wiggum",
+  },
+  {
+    quote:
+      "This is a thousand monkeys working at a thousand typewriters. Soon they’ll have written the greatest novel known to man. Let’s see. It was the best of times, it was the “blurst” of times! You stupid monkey!",
+    author: "Mr. Burns",
+  },
+  {
+    quote:
+      "I don’t mind if you pee in the shower, but only if you’re taking a shower.",
+    author: "Marge Simpson",
+  },
+  { quote: "Stupid sexy Flanders!", author: "Homer Simpson" },
+  {
+    quote:
+      "Inside every hardened criminal beats the heart of a ten-year-old boy.",
+    author: "Bart Simpson",
+  },
+  {
+    quote:
+      "It’s not easy to juggle a pregnant wife and a troubled child, but somehow I managed to fit in eight hours of TV a day.",
+    author: "Homer Simpson",
+  },
+  {
+    quote:
+      "Chat away. I’ll just amuse myself with some pornographic playing cards.",
+    author: "Mayor Quimby",
+  },
+  {
+    quote: "Oh, loneliness and cheeseburgers are a dangerous mix.",
+    author: "Comic Book Guy",
+  },
+  {
     quote: "Just because I don’t care doesn’t mean that I don’t understand.",
     author: "Homer Simpson",
   },

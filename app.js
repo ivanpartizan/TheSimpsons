@@ -277,6 +277,8 @@ const SimpsonsQuotes = (function () {
         break;
     }
 
+    picture.classList.add("animate");
+
     output.innerHTML = `<div class='overlay'><h1>${quote.quote}</h1> <h2>${quote.author}</h2></div>`;
   };
 

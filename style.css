@@ -92,3 +92,31 @@ img {
 img:hover {
   transform: scale(1.1) rotate(10deg) translateX(-10%) translateY(10%);
 }
+
+.animate:hover {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}

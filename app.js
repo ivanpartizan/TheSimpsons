@@ -1,5 +1,7 @@
 const btn = document.getElementById("button");
 const picture = document.getElementById("picture");
+btn.style.animation = "spin2 4s linear";
+// document.getElementById("button").style.animation = "spin2 4s linear infinite";
 
 const SimpsonsQuotes = (function () {
   const getQuote = () => {
@@ -277,7 +279,8 @@ const SimpsonsQuotes = (function () {
         break;
     }
 
-    picture.classList.add("animate");
+    picture.style.animation = "spin1 4s linear";
+    // picture.classList.add("text");
 
     output.innerHTML = `<div class='overlay'><h1>${quote.quote}</h1> <h2>${quote.author}</h2></div>`;
   };

@@ -38,11 +38,15 @@ button {
   outline: none;
   border-radius: 25px;
   background-color: #ffd90f;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
 button:hover {
   background-color: lightskyblue;
   color: white;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
 h1 {
@@ -87,36 +91,47 @@ h2 {
 img {
   transition: all 1s;
   height: 400px;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
 img:hover {
   transform: scale(1.1) rotate(10deg) translateX(-10%) translateY(10%);
 }
 
-.animate:hover {
-  animation-name: example;
-  animation-duration: 4s;
+.text {
+  animation-name: spin1;
+  animation-duration: 3s;
 }
 
-@keyframes example {
+#picture {
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+#picture:hover {
+  transform: scale(1.5);
+}
+
+@keyframes spin1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes idle {
+  100% {
+  }
+}
+@keyframes flyup {
   0% {
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    left: 0px;
-    top: 200px;
+    bottom: -100px;
   }
   100% {
-    left: 0px;
-    top: 0px;
+    bottom: 40px;
   }
 }

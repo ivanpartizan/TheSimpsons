@@ -50,15 +50,12 @@ button {
   outline: none;
   border-radius: 25px;
   background-color: #ffd90f;
-  animation-name: example;
-  animation-duration: 4s;
+  transition: all 0.5s;
 }
 
 button:hover {
-  background-color: lightskyblue;
-  color: white;
-  animation-name: example;
-  animation-duration: 4s;
+  color: #ffd90f;
+  background: rgba(0, 0, 0, 0.66);
 }
 
 h1 {
@@ -85,15 +82,16 @@ h2 {
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
+  background: #ffd90f;
   border-radius: 25px;
   padding: 10px;
   text-align: center;
+  transition: all 0.5s;
 }
 
 .overlay:hover {
-  cursor: pointer;
-  color: white;
-  background: lightskyblue;
+  color: #ffd90f;
+  background: rgba(0, 0, 0, 0.66);
 }
 
 .picture {

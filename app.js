@@ -1,7 +1,5 @@
 const btn = document.getElementById("button");
 const picture = document.getElementById("picture");
-// btn.style.animation = "spin2 4s linear";
-// document.getElementById("button").style.animation = "spin2 4s linear infinite";
 
 const SimpsonsQuotes = (function () {
   const getQuote = () => {
@@ -213,7 +211,6 @@ const SimpsonsQuotes = (function () {
 
     const number = Math.floor(Math.random() * quotes.length);
     const quote = quotes[number];
-    console.log(number, quote);
 
     let author = quote.author;
     switch (author) {
@@ -279,15 +276,14 @@ const SimpsonsQuotes = (function () {
         break;
     }
 
-    picture.style.animation = "spin1 3s linear 2s";
+    picture.style.animation = "enter 2s linear";
     picture.addEventListener("animationend", function () {
       picture.style.animation = "";
     });
-    // picture.classList.add("text");
 
     output.innerHTML = `<div class='overlay'><h1>${quote.quote}</h1> <h2>${quote.author}</h2></div>`;
 
-    output.style.animation = "spin2 2s linear";
+    output.style.animation = "appear 2s linear";
     output.addEventListener("animationend", function () {
       output.style.animation = "";
     });

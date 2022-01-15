@@ -23,14 +23,19 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: -1;
   display: flex;
   flex-direction: column;
 }
 
+header {
+  background: #ffd90f;
+}
+
 h1.title {
   color: #ffd90f;
+  color: black;
   font-family: "Permanent Marker", cursive;
   font-size: 40px;
   text-transform: uppercase;
@@ -108,10 +113,10 @@ img {
 }
 
 img:hover {
-  transform: scale(1.1) rotate(10deg) translateX(-10%) translateY(10%);
+  transform: scale(1.1) rotate(-10deg) translateX(-10%) translateY(10%);
 }
 
-@keyframes spin1 {
+@keyframes enter {
   0% {
     transform: translateY(100%);
   }
@@ -119,11 +124,17 @@ img:hover {
     transform: translateY(0);
   }
 }
-@keyframes spin2 {
+@keyframes appear {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    font-size: 10px;
   }
 }

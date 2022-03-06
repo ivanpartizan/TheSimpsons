@@ -295,3 +295,7 @@ const SimpsonsQuotes = (function () {
     getQuote,
   };
 })();
+
+const tl = gsap.timeline({ defaults: { duration: 1 } });
+tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
+tl.fromTo("#button", { opacity: 0, y: 1000 }, { opacity: 1, y: 0 });

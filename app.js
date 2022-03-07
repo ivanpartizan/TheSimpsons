@@ -297,5 +297,21 @@ const SimpsonsQuotes = (function () {
 })();
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
-tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
+// tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
 tl.fromTo("#button", { opacity: 0, y: 1000 }, { opacity: 1, y: 0 });
+
+const titleText = document.querySelector(".title");
+const titleLetters = titleText.textContent.split("");
+console.log(titleLetters);
+
+titleText.textContent = "";
+
+titleLetters.forEach((letter) => {
+  titleText.innerHTML += `<span class='letter'>${letter}</span>`;
+});
+gsap.set(".letter", { display: "inline-block" });
+gsap.fromTo(
+  ".letter",
+  { y: "-100%" },
+  { y: 0, delay: 1, stagger: 0.1, ease: "back.out(1.5)" }
+);

@@ -296,13 +296,15 @@ const SimpsonsQuotes = (function () {
   };
 })();
 
+gsap.set(".title", { y: "100%" });
+gsap.set("#button", { y: "-100%" });
+
 const tl = gsap.timeline({ defaults: { duration: 1 } });
-// tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
+tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
 tl.fromTo("#button", { opacity: 0, y: 1000 }, { opacity: 1, y: 0 });
 
 const titleText = document.querySelector(".title");
 const titleLetters = titleText.textContent.split("");
-console.log(titleLetters);
 
 titleText.textContent = "";
 
@@ -313,5 +315,5 @@ gsap.set(".letter", { display: "inline-block" });
 gsap.fromTo(
   ".letter",
   { y: "-100%" },
-  { y: 0, delay: 1, stagger: 0.1, ease: "back.out(1.5)" }
+  { y: 0, opacity: 1, delay: 1, stagger: 0.1, ease: "back.out(1.5)" }
 );

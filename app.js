@@ -287,6 +287,8 @@ const SimpsonsQuotes = (function () {
     output.addEventListener("animationend", function () {
       output.style.animation = "";
     });
+
+    document.getElementById("my_audio").play();
   };
 
   btn.addEventListener("click", getQuote);
@@ -301,7 +303,7 @@ gsap.set("#button", { y: "-100%" });
 
 const tl = gsap.timeline({ defaults: { duration: 1 } });
 tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
-tl.fromTo("#button", { opacity: 0, y: 1000 }, { opacity: 1, y: 0 });
+tl.fromTo("#button", { scale: 0, y: -1000 }, { scale: 1, y: 0 });
 
 const titleText = document.querySelector(".title");
 const titleLetters = titleText.textContent.split("");
@@ -315,5 +317,9 @@ gsap.set(".letter", { display: "inline-block" });
 gsap.fromTo(
   ".letter",
   { y: "-100%" },
-  { y: 0, opacity: 1, delay: 1, stagger: 0.1, ease: "back.out(1.5)" }
+  { y: 0, opacity: 1, delay: 1, stagger: 0.2, ease: "back.out(1.5)" }
 );
+
+// window.onload = function () {
+//   document.getElementById("my_audio").play();
+// };

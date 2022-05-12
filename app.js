@@ -305,7 +305,7 @@ const tl = gsap.timeline({ defaults: { duration: 1 } });
 tl.fromTo(".title", { opacity: 0, y: -1000 }, { opacity: 1, y: 0 });
 tl.fromTo("#button", { scale: 0, y: -1000 }, { scale: 1, y: 0 });
 
-const titleText = document.querySelector(".title");
+const titleText = document.querySelector(".simpsons");
 const titleLetters = titleText.textContent.split("");
 
 titleText.textContent = "";
